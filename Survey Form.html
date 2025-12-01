@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for your business! Please take a moment to provide feedback on your recent experience to help us improve our services.
+</p>
+<form id="survey-form">
+  <fieldset>
+    <legend>Personal information</legend>
+  <label for="name"id="name-label">Name(required):</label>
+<input id="name"type="text" required placeholder="e.g.,John Doe"><br/>
+<label for="email"id="email-label">Email(required):</label>
+<input id="email"type="email"name="email" placeholder="example@email.com"required><br/>
+<label for="number"id="number-label">Number(optional):</label>
+<input id="number" type="number"placeholder="0123456789"min="3"max="20">
+<legend>Gender</legend>
+          <input id="Male-option" type="radio" name="gender"value="radio" />
+          <label for="Female-option">Male</label>
+          <input id="female-option" type="radio" name="gender" value="radio"/>
+          <label for="female-option">Female</label>
+</fieldset>
+<fieldset>
+          <legend>Ratings</legend>
+
+          <label for="service">How was the service?</label>
+
+          <select id="dropdown"name="service" id="service">
+            <option value="poor"disabled>Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>How did you know of our existance?</legend>
+          <input type="checkbox"id="s-media"name="media"value="media">
+          <label for="s-media">Social media</label>
+          <input type="checkbox"id="Friends"name="friends"value="friends">
+          <label for="friends">Friends</label>
+          <input type="checkbox"id="radio"name="radio"value="radio">
+          <label for="radio">Radio</label>
+          <input type="checkbox"id="poster"name="poster"value="poster">
+          <label for="poster">Posters</label>
+          <input type="checkbox"id="tv"name="tv"value="tv">
+          <label for="tv">Tv</label>
+          </fieldset>
+            <label for="comments">Other comments?</label>
+            <textarea id="comments"cols="30"rows="10"></textarea><br/>
+            <button id="submit" type="submit">Submit</button>
+</form>
+  </body>
+</html>
